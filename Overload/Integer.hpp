@@ -6,7 +6,7 @@
 /*   By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 10:28:51 by arabefam          #+#    #+#             */
-/*   Updated: 2025/03/03 10:45:24 by arabefam         ###   ########.fr       */
+/*   Updated: 2025/03/03 11:47:11 by arabefam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ class	Integer {
 		~Integer( void );
 		int	getValue( void ) const;
 		Integer&	operator=( Integer const& right );
+		Integer	operator+( Integer const& right);
 	private:
 		int	_n;
 };

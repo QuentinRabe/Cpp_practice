@@ -6,7 +6,7 @@
 /*   By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 10:30:26 by arabefam          #+#    #+#             */
-/*   Updated: 2025/03/03 10:43:59 by arabefam         ###   ########.fr       */
+/*   Updated: 2025/03/03 11:49:20 by arabefam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,12 @@ Integer::~Integer( void ) {
 
 int	Integer::getValue( void ) const {
 	return (this->_n);
+}
+
+Integer	Integer::operator+( Integer const& right) {
+	std::cout << "Add operator with " << this->getValue() << " and " << right.getValue() << std::endl;
+	this->_n += right.getValue();
+	return (*this);
 }
 
 Integer&	Integer::operator=( Integer const& right) {
